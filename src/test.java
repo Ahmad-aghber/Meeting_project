@@ -9,7 +9,10 @@ public class test {
         Employee fourthEmployee = new Employee("Isa" , "Jordanian");
 
         Meeting meeting = new Meeting(new Date(2020, Calendar.JANUARY,3));
-        //todo add all the employees  for dev1
+        meeting.addEmployee(firstEmployee);
+        meeting.addEmployee(secondEmployee);
+        meeting.addEmployee(thirdEmployee);
+        meeting.addEmployee(fourthEmployee);
         //todo remove the last one for dev2
         meeting.printEmployees();
     }

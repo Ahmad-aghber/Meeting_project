@@ -12,15 +12,19 @@ public class Meeting {
         this.dateOfMeeting = dateOfMeeting;
     }
 
-    //todo add method called addEmployee to add employee to the list employees for dev1
+    public void addEmployee(Employee employee){
+        if(employee == null)
+            throw new IllegalArgumentException();
+        employees.add(employee);
+    }
 
     //todo add method called removeLastEmployee to remove last employee in the list employees for dev2
 
 
 
     public void printEmployees(){
-        //todo print employee number for dev1
         for (int i = 0; i < employees.size(); i++) {
+            System.out.println("Employee number : " + i);
             System.out.println(employees.get(i));
         }
     }
