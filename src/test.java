@@ -13,7 +13,7 @@ public class test {
         meeting.addEmployee(secondEmployee);
         meeting.addEmployee(thirdEmployee);
         meeting.addEmployee(fourthEmployee);
-        //todo remove the last one for dev2
+        meeting.removeLastEmployee();
         meeting.printEmployees();
     }
 }

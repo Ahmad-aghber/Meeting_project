@@ -18,8 +18,12 @@ public class Meeting {
         employees.add(employee);
     }
 
-    //todo add method called removeLastEmployee to remove last employee in the list employees for dev2
 
+    public void removeLastEmployee(){
+        if(employees.size() <= 0)
+            throw new IllegalStateException();
+        employees.remove(employees.size() - 1);
+    }
 
 
     public void printEmployees(){
